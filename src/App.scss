@@ -1,0 +1,108 @@
+@import "./scss/bootstrap";
+.haz {
+  background-color: #ececec;
+}
+
+.a {
+  margin-top: 11%;
+}
+
+.hero-bg {
+  background-image: url("./assets/back.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.po {
+  position: absolute;
+  bottom: 100px;
+  right: 490px;
+}
+
+.lo {
+  position: absolute;
+  bottom: 400px;
+  left: 500px;
+}
+
+.bor {
+  border: none;
+  border-color: green;
+  outline-color: green;
+}
+
+// togglt
+
+.switch {
+  font-size: 25px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border: 1px solid green;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.27em;
+  bottom: 0.25em;
+  background-color: green;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px green;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.4em);
+  background-color: #fff;
+}
+
+// toggle clo
+
+.hr {
+  margin-top: 8%;
+}
+
+.box {
+  outline: none;
+  border: none;
+  padding: 20px 60px;
+}
+
+.back {
+  background-color: #007e85;
+  color: white;
+}
